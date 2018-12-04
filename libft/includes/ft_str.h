@@ -6,7 +6,7 @@
 /*   By: abbesbes <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/03 16:59:59 by abbesbes          #+#    #+#             */
-/*   Updated: 2018/12/03 17:05:22 by abbesbes         ###   ########.fr       */
+/*   Updated: 2018/12/04 12:15:58 by abbesbes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,6 @@ char			*ft_strndup_i(const char *s1, size_t n, size_t i);
 int				ft_count_sep_words(const char *s, char c);
 size_t			ft_strlenz(char *str);
 char			*ft_strrev(char *str);
+size_t			ft_strcontains(char *str, int c);
 
 #endif
