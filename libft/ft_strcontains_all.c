@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcontains.c                                   :+:      :+:    :+:   */
+/*   ft_strcontains_all.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abbesbes <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/04 11:27:35 by abbesbes          #+#    #+#             */
-/*   Updated: 2018/12/04 12:25:45 by abbesbes         ###   ########.fr       */
+/*   Created: 2018/12/04 12:20:10 by abbesbes          #+#    #+#             */
+/*   Updated: 2018/12/04 12:24:03 by abbesbes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcontains(char *str, int c)
+#include <string.h>
+
+size_t	ft_strcontains_all(char *str, int c)
 {
+	int n;
+
 	if (!str || c == '\0')
 		return (0);
-	while (*str && *str != c)
+	n = 0;
+	while (*str)
+	{
+		if (*str == c)
+			n++;
 		str++;
-	if (*str)
-		return (1);
-	else
-		return (0);
+	}
+	return (n);
 }

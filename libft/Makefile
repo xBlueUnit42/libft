@@ -6,7 +6,7 @@
 #    By: abbesbes <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/31 18:49:49 by abbesbes          #+#    #+#              #
-#    Updated: 2018/12/04 12:15:15 by abbesbes         ###   ########.fr        #
+#    Updated: 2018/12/04 12:24:23 by abbesbes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,7 +94,8 @@ OBJ = ft_memset.o \
 				ft_strlenz.o \
 				ft_swap.o \
 				get_next_line.o \
-				ft_strcontains.o
+				ft_strcontains.o \
+				ft_strcontains_all.o
 
 all: $(NAME)
 
